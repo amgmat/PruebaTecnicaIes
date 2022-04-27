@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12" mat-dialog-content>
+            <mat-form-field>
+                <mat-label>Nombre</mat-label>
+                <input matInput
+                #valorNombre
+                placeholder="nombre"
+                >
+            </mat-form-field>
+            <!-- (keyup.enter)="asignarNombre(nombre.value);" -->
+        </div>
+        <div mat-dialog-actions>
+            <button mat-button mat-dialog-close
+            (click)="asignarNombre()"
+            >Aceptar</button>
+            <button mat-button mat-dialog-close>Cancelar</button>
+        </div>
+    </div>
+</div>

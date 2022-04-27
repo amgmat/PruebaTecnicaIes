@@ -1,0 +1,18 @@
+<div class="container-fluid bienvenida-portal vh-100">
+    <div class="row d-flex align-items-center">
+        <div class="col-12">
+            <p class=" h1 text-center text-white font-weight-bolder">Bienvenidos a mi portal</p>
+        </div>
+        <div class="col-12 pt-2">
+            <p class=" h3 text-center text-white font-weight-bold">Nos podrías indicar tu nombre</p>
+        </div>
+
+        <div class="col-12 pt-2 text-center">
+            <button mat-raised-button color="primary" (click)="openDialog()">Escribe tu nombre</button>
+        </div>
+
+        <div *ngIf="nombre" class="col-12 pt-2 text-center">
+            <p class="h4 text-white font-weight-bold">{{nombre | lowercase}}</p>
+        </div>
+    </div>
+</div>
