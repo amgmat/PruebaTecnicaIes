@@ -4,4 +4,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('/assets/img/tierranasa.jpeg');
+    background-size: cover;
+}
+
+.contenedor{
+    border-radius: 10px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    width:10px;
 }

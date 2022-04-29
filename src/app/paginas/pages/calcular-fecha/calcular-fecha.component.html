@@ -1,5 +1,5 @@
-<div class="container vh-100 calcularFecha">
-    <div class="row border p-4">
+<div class="container-fluid vh-100 calcularFecha">
+    <div class="row calcularForm pt-3 pb-3 m-4">
         <div class="col-12">
             <h2 class="text-center">Calcular Fecha</h2>
         </div>
@@ -14,6 +14,7 @@
                     <mat-hint>MM/DD/YYYY</mat-hint>
                     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                     <mat-datepicker #picker></mat-datepicker>
+                    <mat-error>Por favor elige una Fecha</mat-error>
                 </mat-form-field>
 
                 <mat-form-field appearance="fill" class="col-12 p-3">
@@ -32,13 +33,17 @@
                     <input matInput 
                     type="number"
                     formControlName="cantidad">
-                    <mat-error>Por favor elige una unidad</mat-error>
+                    <mat-error>Por favor elige una Cantidad</mat-error>
                 </mat-form-field>
 
                 <div class="col-12 text-center">
                     <button type="submit" mat-flat-button color="primary">Calcular</button>
                 </div>
             </form>
+        </div>
+
+        <div *ngIf="fechaDinamica" class="col-12 text-center mt-3">
+            <p class=" h2 font-weight-bold">El resultado fue: {{fechaDinamica|date:'dd MMM y'| lowercase}}</p>
         </div>
     </div>
 </div>

@@ -1,3 +1,21 @@
 a{
     text-decoration:none;
+    color:white;
 }
+
+.logout:hover{
+    color:red;
+    cursor:pointer;
+}
+
+
+@media (max-width: 700px) {
+    nav li{
+        font-size: 16px;
+    }
+  }
+@media (max-width: 500px) {
+    nav li{
+        font-size: 13px;
+    }
+  }

@@ -1,3 +1,9 @@
 .container-fluid{
-    height:88vh;
+    height:100vh;
+    background-image: url('/assets/img/arbolBosque.jpeg');
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

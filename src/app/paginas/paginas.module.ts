@@ -12,6 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CambioLetrasPipe } from '../pipes/cambio-letras.pipe';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     DashboardComponent,
     NavbarComponent,
     FooterComponent,
+    CambioLetrasPipe
   ],
   imports: [
     CommonModule,

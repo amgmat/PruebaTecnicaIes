@@ -1,5 +1,12 @@
 .formularioInformacion{
+    background-image:url('/assets/img/fondo.jpeg');
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+}
+
+.formularioContenedor{
+    background-color: rgba(255,255,255,0.75);
 }

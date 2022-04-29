@@ -10,10 +10,8 @@ import { ModalService } from '../../services/modal.service';
 })
 export class PaginaBienvenidaComponent implements OnInit {
 
-  // nombre!:string;
-
   get nombre(){
-    return this.modalService.nombre
+    return this.modalService.nombre;
   }
 
   constructor(public dialog: MatDialog,
@@ -22,7 +20,6 @@ export class PaginaBienvenidaComponent implements OnInit {
 
   
   ngOnInit(): void {
-    console.log('nombre', this.nombre)
   }
   openDialog() {
     console.log('abriendo modal');

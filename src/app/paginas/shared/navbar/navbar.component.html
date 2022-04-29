@@ -1,17 +1,13 @@
-<nav class="navbar navbar-light" color="primary">
-    <ul class="nav justify-content-start">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/bienvenida">Bienvenida</a>
+<nav class="bg-dark">
+    <ul class="nav justify-content-center mr-auto">
+        <li *ngFor="let item of itemNav" 
+            class="nav-item h5">
+          <a class="nav-link"
+           [routerLink]="item.link">{{item.nombre}}</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/conversiones" routerLinkActive="active">Conversiones</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/calcula-fecha" routerLinkActive="active">Calcula-Fecha</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/formulario" routerLinkActive="active">Formularios</a>
+        <li class="nav-item h5">
+          <a class="nav-link logout" (click)="logout()">Salir</a>
         </li>
         </ul>
-        <button mat-raised-button color="warn" (click)="logout()">Salir</button>
     </nav>
+

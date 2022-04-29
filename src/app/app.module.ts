@@ -5,24 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 import { MaterialModule } from './material/material.module';
 
 import { LoginComponent } from './auth/login/login.component';
-import { CambioLetrasPipe } from './pipes/cambio-letras.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    CambioLetrasPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
